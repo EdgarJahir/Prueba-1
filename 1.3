@@ -1,0 +1,23 @@
+
+ *
+* @autor Edgar
+ * /
+importar  java.awt. * ;
+importar  java.awt.event. * ;
+importar  javax.swing. * ;
+
+público  de clase  MiVentana  extiende  JFrame {
+     MiVentana pública () {
+        super ( " Mi otra ventana " );
+        setSize ( 500 , 600 );
+        setDefaultCloseOperation ( JFrame . EXIT_ON_CLOSE );
+        Contenedor cp = getContentPane ();
+        cp . setLayout ( nuevo  FlowLayout ());
+        JLabel etiqueta =  new  JLabel ( " Nombre: " );
+        JTextField texto =  new  JTextField ( 20 );
+        JButton boton =  new  JButton ( " Aceptar " );
+        cp . agregar (etiqueta);
+        cp . agregar (texto);
+        cp . agregar (boton);
+    }
+}
